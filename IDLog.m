@@ -10,7 +10,7 @@
 
 @implementation IDLog
 
-+ (void)idlLogWithType:(IDLogType)type andLogString:log andFileName:(char *)fileName andLineNumber:(NSInteger)lineNumber
++ (void)idlLogWithType:(IDLogType)type andLogString:(NSString *)log andFileName:(char *)fileName andLineNumber:(NSInteger)lineNumber
 {
 #ifdef DEBUG
     NSString *idlPrefix = @"ℹ️ IDLogInfo:";

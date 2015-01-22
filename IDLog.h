@@ -1,7 +1,7 @@
 //
 //  IDLog.h
 //  idlFrame
-//  Abstract:Colorful & Interesting Log helper ：］
+
 //  Created by Nick(xuli02) on 15/1/22.
 //  Copyright (c) 2015年 Baidu. All rights reserved.
 //
@@ -15,10 +15,10 @@ typedef enum : NSUInteger {
     IDLogTypeInfo,
 } IDLogType;
 
-#define IDLog(type,log) ([IDLog idlLogWithType:type andLogString:log andFileName:__FILE__ andLineNumber:__LINE__])
+#define IDLog(type,fmt,...) [IDLog idlLogWithType:type andLogString:[NSString stringWithFormat:fmt,__VA_ARGS__] andFileName:__FILE__ andLineNumber:__LINE__]
 
 @interface IDLog : NSObject
 
-+ (void)idlLogWithType:(IDLogType)type andLogString:log andFileName:(char *)fileName andLineNumber:(NSInteger)lineNumber;
++ (void)idlLogWithType:(IDLogType)type andLogString:(NSString *)log andFileName:(char *)fileName andLineNumber:(NSInteger)lineNumber;
 
 @end
