@@ -15,7 +15,7 @@ typedef enum : NSUInteger {
     IDLogTypeInfo,
 } IDLogType;
 
-#define IDLog(type,fmt,...) [IDLog idlLogWithType:type andLogString:[NSString stringWithFormat:fmt,__VA_ARGS__] andFileName:__FILE__ andLineNumber:__LINE__]
+#define IDLog(type,fmt,...) [IDLog idlLogWithType:type andLogString:[NSString stringWithFormat:fmt,##__VA_ARGS__] andFileName:__FILE__ andLineNumber:__LINE__]
 
 @interface IDLog : NSObject
 
