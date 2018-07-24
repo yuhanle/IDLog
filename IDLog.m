@@ -19,11 +19,10 @@
             idlPrefix = @"❌ IDLogError:";
             break;
         case IDLogTypeWarning:
-            idlPrefix = @"⚠️IDLogWarning:";
+            idlPrefix = @"⚠️ IDLogWarning:";
             break;
         case IDLogTypeDebug:
-            idlPrefix = @"🔧IDLogDebug:";
-            
+            idlPrefix = @"🔧 IDLogDebug:";
         default:
             break;
     }
