@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/yuhanle/IDLog"
   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author       = { "煜寒了" => "deadvia@gmail.com" }
-  s.source       = { :git => "https://github.com/yuhanle/IDLog.git" :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/yuhanle/IDLog.git", :tag => s.version.to_s }
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
 
