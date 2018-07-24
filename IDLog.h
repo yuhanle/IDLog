@@ -20,7 +20,7 @@ typedef enum : NSUInteger {
 #define IDLogError(fmt,...) 		IDLog(IDLogTypeError,fmt,##__VA_ARGS__)
 #define IDLogWarning(fmt,...) 	    IDLog(IDLogTypeWarning,fmt,##__VA_ARGS__)
 #define IDLogDebug(fmt,...) 		IDLog(IDLogTypeDebug,fmt,##__VA_ARGS__)
-#define IDLogInfo(fmt,...) 	    IDLog(IDLogTypeInfo,fmt,##__VA_ARGS__)
+#define IDLogInfo(fmt,...) 	        IDLog(IDLogTypeInfo,fmt,##__VA_ARGS__)
 
 @interface IDLog : NSObject
 

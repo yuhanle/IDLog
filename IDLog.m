@@ -13,7 +13,7 @@
 + (void)idlLogWithType:(IDLogType)type andLogString:(NSString *)log andFileName:(char *)fileName andLineNumber:(NSInteger)lineNumber
 {
 #ifdef DEBUG
-    NSString *idlPrefix = @"ℹ️ IDLogInfo:";
+    NSString *idlPrefix = @"";
     switch (type) {
         case IDLogTypeError:
             idlPrefix = @"❌ IDLogError:";
@@ -24,6 +24,7 @@
         case IDLogTypeDebug:
             idlPrefix = @"🔧 IDLogDebug:";
         default:
+            idlPrefix = @"ℹ️ IDLogInfo:";
             break;
     }
     
