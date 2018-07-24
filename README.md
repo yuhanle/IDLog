@@ -1,0 +1,3 @@
+# IDLog
+
+> easy to use!

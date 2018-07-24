@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "IDLog"
   s.version      = "1.0.0"
-  s.summary      = "A pretty light log util on NSLog, make it more easier for us to distinguish different kinds of logs(error,warning,debug,info,etc) using small icon prefix,and it's easy to use"
+  s.summary      = "A pretty light log util on NSLog, and it's easy to use."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,11 +25,11 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  A pretty light log util on NSLog, make it more easier for us to distinguish different kinds of logs(error,warning,debug,info,etc) using small icon prefix,and it's easy to use
+  A pretty light log util on NSLog, make it more easier for us to distinguish different kinds of logs(error,warning,debug,info,etc) using small icon prefix,and it's easy to use.
                    DESC
 
   s.homepage     = "https://github.com/yuhanle/IDLog"
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "煜寒了" => "deadvia@gmail.com" }
   s.source       = { :git => "https://github.com/yuhanle/IDLog.git", :tag => s.version.to_s }
   s.platform     = :ios, '6.0'
