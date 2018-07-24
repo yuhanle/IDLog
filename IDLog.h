@@ -15,11 +15,12 @@ typedef enum : NSUInteger {
     IDLogTypeInfo,
 } IDLogType;
 
-#define IDBLog(type,fmt,...) 		[IDLog idlLogWithType:type andLogString:[NSString stringWithFormat:fmt,##__VA_ARGS__] andFileName:__FILE__ andLineNumber:__LINE__]
-#define IDBLogError(fmt,...) 		IDBLog(IDLogTypeError,fmt,...)
-#define IDBLogWarning(fmt,...) 	    IDBLog(IDLogTypeWarning,fmt,...)
-#define IDBLogDebug(fmt,...) 		IDBLog(IDLogTypeDebug,fmt,...)
-#define IDBLogInfo(fmt,...) 	    IDBLog(IDLogTypeInfo,fmt,...)
+#define IDLog(type,fmt,...) 		\
+[IDLog idlLogWithType:type andLogString:[NSString stringWithFormat:fmt,##__VA_ARGS__] andFileName:__FILE__ andLineNumber:__LINE__]
+#define IDLogError(fmt,...) 		IDLog(IDLogTypeError,fmt,##__VA_ARGS__)
+#define IDLogWarning(fmt,...) 	    IDLog(IDLogTypeWarning,fmt,##__VA_ARGS__)
+#define IDLogDebug(fmt,...) 		IDLog(IDLogTypeDebug,fmt,##__VA_ARGS__)
+#define IDLogInfo(fmt,...) 	    IDLog(IDLogTypeInfo,fmt,##__VA_ARGS__)
 
 @interface IDLog : NSObject
 
